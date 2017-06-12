@@ -13,7 +13,9 @@ class CreateTodoForm extends Component {
   }
 
   onInputChange(event){
-    this.state = event.target.value;
+    this.setState ({
+      todo: event.target.value
+    })
   }
 
   onFormSubmit(event){
